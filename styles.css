@@ -27,7 +27,7 @@ a:link {
 }
 
 a:visited {
-    color: gray;
+    color: rgb(128, 128, 128);
 }
 
 a:hover {
@@ -48,13 +48,9 @@ a:hover {
 }
 
 .box {
-    margin: 5% auto;
-    height: 100px;
-    width: 100px;
-    background-color: rebeccapurple;
-    transform: rotate(0.8turn);
+    border: 5px solid rebeccapurple;
+    margin: 1em;
 }
-
 article p:first-child::first-line {
     font-size: 130%;
     font-weight: bold;
@@ -74,4 +70,23 @@ h1 ~ p {
 :where(a.author) {
     text-decoration: overline;
     color: red;
+}
+
+.inline-block-span {
+    margin: 1em;
+    padding: 1em;
+    width: 80px;
+    height: 50px;
+    background-color: lightblue;
+    border: 5px solid blue;
+    border-top-right-radius: 30%;
+    display: inline-block;
+}
+
+.horizontal {
+    writing-mode: horizontal-tb;
+}
+
+.vertical {
+    writing-mode: vertical-rl;
 }
